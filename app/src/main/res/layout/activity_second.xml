@@ -2,12 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_second"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/btn_previous_secont_activity"
+        android:id="@+id/btn_previous_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -17,12 +18,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="54dp"
-        android:text="SecondActivity"
-        app:layout_constraintBottom_toTopOf="@+id/btn_previous_secont_activity"
-        app:layout_constraintEnd_toEndOf="@+id/btn_previous_secont_activity" />
+        android:text="@string/title_second"
+        app:layout_constraintBottom_toTopOf="@+id/btn_previous_second_activity"
+        app:layout_constraintEnd_toEndOf="@+id/btn_previous_second_activity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

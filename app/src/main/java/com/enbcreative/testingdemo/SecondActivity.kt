@@ -10,6 +10,6 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
-        btn_previous_secont_activity.setOnClickListener {startActivity( Intent(this, MainActivity::class.java))}
+        btn_previous_second_activity.setOnClickListener {startActivity( Intent(this, MainActivity::class.java))}
     }
 }
