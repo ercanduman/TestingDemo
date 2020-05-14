@@ -1,0 +1,3 @@
+package com.enbcreative.testingdemo
+
+class FragmentsActivityTest

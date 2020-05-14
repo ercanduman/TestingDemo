@@ -11,5 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn_next_main.setOnClickListener { startActivity(Intent(this, SecondActivity::class.java)) }
+
+        btn_to_fragments_act_main.setOnClickListener {
+            startActivity(Intent(this, FragmentsActivity::class.java))
+        }
     }
 }
