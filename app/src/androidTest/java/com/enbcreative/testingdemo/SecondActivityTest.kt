@@ -1,6 +1,7 @@
 package com.enbcreative.testingdemo
 
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
@@ -37,5 +38,19 @@ class SecondActivityTest {
     @Test
     fun is_title_contains_specific_text() {
         onView(withId(R.id.title_second)).check(matches(withText(R.string.title_second)))
+    }
+
+    @Test
+    fun text_navigate_to_main() {
+        onView(withId(R.id.btn_previous_second_activity)).perform(click())
+        onView(withId(R.id.parent_main)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_nav_to_main_and_back_to_SecondActivity() {
+        onView(withId(R.id.btn_previous_second_activity)).perform(click())
+        onView(withId(R.id.parent_main)).check(matches(isDisplayed()))
+        onView(withId(R.id.btn_next_main)).perform(click())
+        onView(withId(R.id.parent_second)).check(matches(isDisplayed()))
     }
 }
