@@ -1,8 +1,8 @@
 package com.enbcreative.testingdemo
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_fragments.*
 
 class FragmentsActivity : AppCompatActivity() {
@@ -12,8 +12,8 @@ class FragmentsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_fragments)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).show()
+        fab_activity_fragments.setOnClickListener {
+            Toast.makeText(this, getString(R.string.toast_message), Toast.LENGTH_SHORT).show()
         }
     }
 }

@@ -15,4 +15,5 @@
     <string name="dialog_title">Enter Input Data</string>
     <string name="button">Button</string>
     <string name="launch_dialog">Launch Dialog</string>
+    <string name="toast_message">Toast message</string>
 </resources>
