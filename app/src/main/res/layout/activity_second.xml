@@ -7,23 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <TextView
+        android:id="@+id/title_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_second"
+        app:layout_constraintBottom_toTopOf="@+id/btn_previous_second_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
     <Button
         android:id="@+id/btn_previous_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title_second"
+
+    <Button
+        android:id="@+id/btn_launch_dialog_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="54dp"
-        android:text="@string/title_second"
-        app:layout_constraintBottom_toTopOf="@+id/btn_previous_second_activity"
-        app:layout_constraintEnd_toEndOf="@+id/btn_previous_second_activity" />
+        android:text="@string/launch_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_previous_second_activity"
+        app:layout_constraintVertical_bias="0.2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

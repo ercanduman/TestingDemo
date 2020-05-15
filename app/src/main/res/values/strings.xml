@@ -12,4 +12,7 @@
     <string name="hello_first_fragment">Hello from first fragment</string>
     <string name="hello_second_fragment">Hello from second fragment</string>
     <string name="fragments">Fragments</string>
+    <string name="dialog_title">Enter Input Data</string>
+    <string name="button">Button</string>
+    <string name="launch_dialog">Launch Dialog</string>
 </resources>
